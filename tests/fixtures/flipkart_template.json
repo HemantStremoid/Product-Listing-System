@@ -1,0 +1,19 @@
+{
+  "name": "FlipkartTemplate",
+  "description": "Flipkart-like template",
+  "template": {
+    "title": {"name":"title","type":"string","required":true,"max_length":200},
+    "brand": {"name":"brand","type":"string","required":true},
+    "sellerSku": {"name":"sellerSku","type":"string","required":true},
+    "categoryPath": {"name":"categoryPath","type":"string","required":true},
+    "listingPrice": {"name":"listingPrice","type":"number","required":true,"min_value":0},
+    "mrp": {"name":"mrp","type":"number","required":true,"min_value":0},
+    "color": {"name":"color","type":"string","required":false},
+    "image1": {"name":"image1","type":"string","required":false},
+    "quantity": {"name":"quantity","type":"integer","required":false},
+    "size": {"name":"size","type":"string","required":false},
+    "gender": {"name":"gender","type":"string","required":false},
+    "description": {"name":"description","type":"string","required":false},
+    "countryOfOrigin": {"name":"countryOfOrigin","type":"string","required":false}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Flipkart mapping example",
+  "marketplace_template_id": 1,
+  "seller_file_id": 1,
+  "column_mapping": [
+    {"seller_column":"Name","marketplace_attribute":"title"},
+    {"seller_column":"BrandName","marketplace_attribute":"brand"},
+    {"seller_column":"SKU","marketplace_attribute":"sellerSku"},
+    {"seller_column":"Category","marketplace_attribute":"categoryPath"},
+    {"seller_column":"MRP","marketplace_attribute":"mrp"},
+    {"seller_column":"Price","marketplace_attribute":"listingPrice"},
+    {"seller_column":"Image1","marketplace_attribute":"image1"},
+    {"seller_column":"Image2","marketplace_attribute":"image2"},
+    {"seller_column":"Quantity","marketplace_attribute":"quantity"},
+    {"seller_column":"Size","marketplace_attribute":"size"},
+    {"seller_column":"Gender","marketplace_attribute":"gender"},
+    {"seller_column":"Description","marketplace_attribute":"description"}
+  ]
+}

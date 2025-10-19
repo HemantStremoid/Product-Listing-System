@@ -1,0 +1,15 @@
+{
+  "name": "Myntra mapping example",
+  "marketplace_template_id": 1,
+  "seller_file_id": 1,
+  "column_mapping": [
+    {"seller_column":"Name","marketplace_attribute":"productName"},
+    {"seller_column":"BrandName","marketplace_attribute":"brand"},
+    {"seller_column":"Gender","marketplace_attribute":"gender"},
+    {"seller_column":"Category","marketplace_attribute":"category"},
+    {"seller_column":"MRP","marketplace_attribute":"mrp"},
+    {"seller_column":"Price","marketplace_attribute":"price"},
+    {"seller_column":"SKU","marketplace_attribute":"sku"},
+    {"seller_column":"Image1","marketplace_attribute":"images"}
+  ]
+}

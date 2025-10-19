@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./uploads:/app/uploads
+    environment:
+      # Use the Postgres service provided below. This avoids host-mounted
+      # SQLite files which often cause permission / path issues when running
+      # in Docker on Windows. The DB will live inside the postgres container
+      # (backed by the named volume `postgres_data`).
+      - DATABASE_URL=postgresql://postgres:postgres@db:5432/product_listing
+    depends_on:
+      - db
+    restart: unless-stopped
+
+  db:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: product_listing
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+
+  # Alternative SQLite-only setup (uncomment to use SQLite instead of PostgreSQL)
+  # app-sqlite:
+  #   build: .
+  #   ports:
+  #     - "8000:8000"
+  #   volumes:
+  #     - ./uploads:/app/uploads
+  #     - ./product_listing.db:/app/product_listing.db
+  #   environment:
+  #     - DATABASE_URL=sqlite:///./product_listing.db
+  #   restart: unless-stopped
+
+volumes:
+  postgres_data:
+

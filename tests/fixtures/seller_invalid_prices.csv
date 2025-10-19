@@ -1,0 +1,4 @@
+SKU,Name,BrandName,MRP,Price
+ISKU0001,BadPrice1,BrandX,100,150
+ISKU0002,BadPrice2,BrandY,50,75
+ISKU0003,OK,BrandZ,80,60

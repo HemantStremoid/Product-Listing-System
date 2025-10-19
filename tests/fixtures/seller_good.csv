@@ -1,0 +1,4 @@
+SKU,Name,BrandName,Gender,Category,Color,Size,MRP,Price,Material,Image1,Image2,Quantity,Description
+GSKU0001,Blue T-Shirt,BrandA,Men,T-Shirts,Blue,M,100,79.99,Cotton,https://example.com/1.jpg,https://example.com/1b.jpg,10,Good product
+GSKU0002,Red Dress,BrandB,Women,Dresses,Red,L,200,150.00,Silk,https://example.com/2.jpg,https://example.com/2b.jpg,5,Popular
+GSKU0003,Kids Tee,BrandC,Boys,T-Shirts,Green,S,50,35.00,Cotton,https://example.com/3.jpg,,20,Kids wear

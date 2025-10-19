@@ -1,0 +1,17 @@
+{
+  "name": "MyntraTemplate",
+  "description": "Myntra-like template",
+  "template": {
+    "productName": {"name":"productName","type":"string","required":true,"max_length":150},
+    "brand": {"name":"brand","type":"string","required":true},
+    "gender": {"name":"gender","type":"string","required":true},
+    "category": {"name":"category","type":"string","required":true},
+    "color": {"name":"color","type":"string","required":false},
+    "size": {"name":"size","type":"string","required":false},
+    "mrp": {"name":"mrp","type":"number","required":true,"min_value":0},
+    "price": {"name":"price","type":"number","required":true,"min_value":0},
+    "sku": {"name":"sku","type":"string","required":true},
+    "images": {"name":"images","type":"array","required":false},
+    "description": {"name":"description","type":"string","required":false}
+  }
+}
